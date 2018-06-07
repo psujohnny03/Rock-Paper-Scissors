@@ -7,44 +7,9 @@
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
-    <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
         crossorigin="anonymous">
-    <style>
-        body {
-            background-image: url("https://thumbs.gfycat.com/RegalAssuredGossamerwingedbutterfly-size_restricted.gif");
-            position: relative;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        form {
-            border: solid;
-            display: block;
-            margin: 20px auto;
-            background-color: lightblue;
-            border-width: 1px;
-            width: 230px;
-            height: 340px;
-            text-align: center;
-            box-shadow: 2px 2px 2px #888888;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        .btn-secondary {
-            border: solid;
-            border-width: 1px;
-            border-radius: 0px;
-        }
-
-        #play {
-            width: 120px;
-        }
-    </style>
-
+    <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
@@ -52,7 +17,7 @@
         <form action="">
             <h1>Rock Paper Scissors</h1>
             <div class="btn-group" data-toggle="buttons">
-                <img width="200px" src="http://advisoranalyst.com/glablog/wp-content/uploads/2014/05/thumb_6917_rockpaperscissors.jpg">
+                <img width="200px" class="center-block" src="http://advisoranalyst.com/glablog/wp-content/uploads/2014/05/thumb_6917_rockpaperscissors.jpg">
                 <br>
                 <label class="btn btn-primary active">
                     <input type="radio" name="options" id="Rock" autocomplete="off" checked> Rock
@@ -87,11 +52,11 @@
         function checkForWin(computer, player) {
             if (computer === "Rock" && player === "Scissors") {
                 return "Computer picked Rock. You Lose!"
-            }else if (computer === "Rock" && player === "Paper") {
+            } else if (computer === "Rock" && player === "Paper") {
                 return "Computer picked Rock. You Win!"
-            }else if (computer === "Rock" && player === "Rock") {
+            } else if (computer === "Rock" && player === "Rock") {
                 return "Computer picked Rock. Draw"
-            }else if (computer === "Paper" && player === "Paper") {
+            } else if (computer === "Paper" && player === "Paper") {
                 return "Computer picked Paper. Draw"
             }
             else if (computer === "Paper" && player === "Scissors") {
